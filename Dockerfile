@@ -4,6 +4,7 @@ COPY entrypoint.sh /entrypoint.sh
 COPY deb_control_builder.py /usr/bin/dcb
 COPY requirements.txt /requirements.txt
 
+RUN echo "here"
 RUN chmod +x /entrypoint.sh /usr/bin/dcb
 ENTRYPOINT ["/entrypoint.sh"]
 
